@@ -1,0 +1,15 @@
+body,
+html {
+  background-color: #363636;
+  /*overflow-y: hidden;*/
+}
+
+.bg {
+  background-color: #363636;
+}
+
+.app-wrapper {
+  /*padding-top: 60px;*/
+  color: beige;
+  height: auto;
+}

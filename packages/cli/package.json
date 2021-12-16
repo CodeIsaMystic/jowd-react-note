@@ -1,0 +1,28 @@
+{
+  "name": "jr-note",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "dist/index.js",
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jr-note/local-client": "^0.1.0"
+  },
+  "devDependencies": {
+    "@jr-note/local-api": "^0.1.0",
+    "commander": "^8.3.0",
+    "@types/node": "^16.11.12",
+    "esbuild": "0.8.26",
+    "typescript": "^4.5.2"
+  }
+}
